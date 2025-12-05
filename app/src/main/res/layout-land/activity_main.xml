@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#47AD39"
+    tools:context=".MainActivity">
+
+    <!-- Jugador A -->
+
+
+    <TextView
+        android:id="@+id/txtSetsATotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="92dp"
+        android:background="#DC0B0B0B"
+        android:ellipsize="none"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="___"
+        android:textColor="#FCFF00"
+        android:textSize="48sp"
+        app:layout_constraintStart_toEndOf="@+id/txtScoreA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/myfont"
+        android:text="Games"
+        android:textAlignment="center"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtGamesA"
+        app:layout_constraintStart_toStartOf="@+id/txtGamesA" />
+
+    <TextView
+        android:id="@+id/textViewSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/myfont"
+        android:text="Score"
+        android:textAlignment="center"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtScoreA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewPreviusSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/myfont"
+        android:text="Sets"
+        android:textAlignment="center"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtSetsATotal"
+        app:layout_constraintStart_toStartOf="@+id/txtSetsATotal" />
+
+    <TextView
+        android:id="@+id/txtScoreA"
+        android:layout_width="132dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:background="#DC0B0B0B"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:text="00"
+        android:textColor="#FCFF00"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPointsA"
+        android:layout_width="132dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:background="#DC0B0B0B"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:text="00"
+        android:textColor="#FCFF00"
+        android:textSize="48sp"
+        app:layout_constraintStart_toEndOf="@+id/txtGamesA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPointsB"
+        android:layout_width="132dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="164dp"
+        android:background="#DC0B0B0B"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:text="00"
+        android:textColor="#FCFF00"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtGamesB" />
+
+    <TextView
+        android:id="@+id/txtGamesB"
+        android:layout_width="132dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="164dp"
+        android:background="#DC0B0B0B"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:text="00"
+        android:textColor="#FCFF00"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtSetsBTotal" />
+
+    <TextView
+        android:id="@+id/txtSetsBTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="172dp"
+        android:background="#DC0B0B0B"
+        android:ellipsize="none"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="___"
+        android:textColor="#FCFF00"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtScoreB" />
+
+    <TextView
+        android:id="@+id/txtScoreB"
+        android:layout_width="132dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="164dp"
+        android:background="#DC0B0B0B"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:text="00"
+        android:textColor="#FCFF00"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtGamesA"
+        android:layout_width="132dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="80dp"
+        android:background="#DC0B0B0B"
+        android:fontFamily="@font/myfont"
+        android:gravity="center"
+        android:text="00"
+        android:textColor="#FCFF00"
+        android:textSize="48sp"
+        app:layout_constraintStart_toEndOf="@+id/txtSetsATotal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/myfont"
+        android:text="Points"
+        android:textAlignment="center"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtPointsA"
+        app:layout_constraintStart_toStartOf="@+id/txtPointsA" />
+
+    <Button
+        android:id="@+id/btnPointA"
+        android:layout_width="89dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#278895"
+        android:text="A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtScoreA" />
+
+    <Button
+        android:id="@+id/btnPointB"
+        android:layout_width="89dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#278895"
+        android:text="B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPointA" />
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="80dp"
+        android:background="#70ACADAB"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnReset"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866">
+
+        <RadioButton
+            android:id="@+id/rd3Sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/rd5Sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="260dp"
+        android:backgroundTint="#278895"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
